@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>ABC Acid-Base Webapp: dev phase</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+
+    <script language="javascript" type="text/javascript" src="jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="jquery.flot.js"></script>
+    <script language="javascript" type="text/javascript" src="jquery.flot.symbol.js"></script>
+    <script language="javascript" type="text/javascript" src="jquery.flot.axislabels.js"></script>
+  </head>
+
+  <body>
+    <div id = "upperspace" style="width = 1200px; min-height:100px">
+      <form>
+	<label for="pH">pH: </label>
+	<input type="text" id="pH">
+	<label for="HCO3">HCO3 (mM): </label>
+	<input type="text" id="HCO3">
+	<label for="pCO2">pCO2 (kPa): </label>
+	<input type="text" id="pCO2">
+
+	<!-- <input type="submit" id="submit" value="Validate"> -->
+	<input type="button" id="submit" value="Calculate">
+      </form>
+      <div id = "resultbox">
+      </div>
+    </div>
+
+
+    
+    <div id="placeholder" style="float: left; width: 800px; height: 800px;"></div>
+    <div id="chartLegend" style="float: right; width: 400px; height: 300px;"></div>
+    <div id="choiceContainer" style="with: 1200px; height: 200px:"></div>
+
+    <script src="abg_validate_inputs.js"></script>
+    <script src="abg_acidbase_webapp.js"></script>
+  </body>
+
+</html>
